@@ -1,0 +1,215 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cp2021 homework site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 -->
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container-fluid'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>41023218 - Arthur's 2021 Fall 計算機程式 作業網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41023218 - Arthur's 2021 Fall 計算機程式 作業網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='關於.html'>關於</a><ul class='dropdown'><li class='has-children'><a href='便攜式混合動力車.html'>便攜式混合動力車</a><ul class='dropdown'><li><a href='ANSI C.html'>ANSI C</a><li><a href='C-notes.html'>C-notes</a><li><a href='用戶界面.html'>用戶界面</a></li></ul><li><a href='Git擴展.html'>Git擴展</a><li><a href='跑.html'>跑</a><li><a href='runsrc.html'>runsrc</a><li><a href='Snake.html'>Snake</a><li><a href='SSH.html'>SSH</a><li class='has-children'><a href='Network.html'>Network</a><ul class='dropdown'><li><a href='Fossil Server.html'>Fossil Server</a></li></li></ul></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Token.html'>Token</a><li><a href='SSH push.html'>SSH push</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='Python.html'>Python</a><li><a href='run1.html'>run1</a><li><a href='run2.html'>run2</a><li><a href='run3.html'>run3</a><li><a href='Server.html'>Server</a><li><a href='W11-1.html'>W11-1</a><li><a href='W12-1.html'>W12-1</a></li></ul><li class='has-children'><a href='W10.html'>W10</a><ul class='dropdown'><li class='has-children'><a href='W11.html'>W11</a><ul class='dropdown'><li><a href='W11 demo.html'>W11 demo</a><li><a href='W12 demo.html'>W12 demo</a></li></ul><li><a href='Examples.html'>Examples</a><li><a href='Snakey.html'>Snakey</a><li><a href='W12.html'>W12</a></li></ul><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li class='has-children'><a href='Algorithms.html'>Algorithms</a><ul class='dropdown'><li><a href='Practice1.html'>Practice1</a><li><a href='Practice2.html'>Practice2</a><li><a href='Practice3.html'>Practice3</a></li></ul><li><a href='Path Finding.html'>Path Finding</a><li><a href='ML in Brython.html'>ML in Brython</a><li><a href='Math.html'>Math</a></li></ul><li><a href='Final Project.html'>Final Project</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">C-notes << <a href='C-notes.html'>Previous</a> <a href='Git擴展.html'>Next</a> >> Git擴展<br /><h1>用戶界面</h1>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">簡介：</span></span></h4>
+<p><a href="https://github.com/KmolYuan/Pyslvs-PyQt5"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Pyslvs-UI</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">是利用Python 3與PyQt5建立的平台機構模擬與合成系統。</span><span style="vertical-align: inherit;">機構模擬與合成的主要核心包括</span></span><a href="https://github.com/mdecourse/python-solvespace"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python的Solvespace</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">幾何約束求解程式庫，</span></span><a href="https://github.com/mdecourse/pyslvs/blob/master/pyslvs/tinycadlib.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">tinycadlib</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">三角幾何函式程式庫，</span></span><a href="https://github.com/mdecourse/metaheuristics"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Metaheruistics</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">演算程式庫，</span></span><a href="https://github.com/mdecourse/pyslvs/blob/master/pyslvs/bfgs.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">bgfs</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">幾何約束求解程式庫，</span></span><a href="https://github.com/mdecourse/pyslvs/blob/master/pyslvs/topo_config.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">拓撲</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">類型合成程式庫，</span></span><a href="https://github.com/mdecourse/pyslvs/blob/80be5830a1a3ccfe3b9540f0eaad408267d26373/pyslvs/number.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">編號</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">數目合成程式庫等。</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">其中，  </span></span><a href="https://github.com/mdecourse/metaheuristics"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Metaheruistics</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">演算程序庫包含實編碼遺傳算法（</span></span><a href="https://github.com/mdecourse/metaheuristics/blob/master/rga.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">RGA</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）、差分進化（</span></span><a href="https://github.com/mdecourse/metaheuristics/blob/master/de.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">DE</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）與螢火蟲算法（</span></span><a href="https://github.com/mdecourse/metaheuristics/blob/master/firefly.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Firefly</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）等三種，平面用於尺寸機構合成演算。</span></span></p>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">開發歷程：</span></span></h4>
+<p><a href="https://github.com/KmolYuan/Pyslvs-PyQt5"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Pyslvs-UI</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">的開髮用208年，最基礎的實數基因算法在平面機構的基礎上，歷經從背景的應用演說，從歷經演變的演化的貢獻：</span></span></p>
+<ol>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">李孟恭, 2015, </span></span><a href="https://hdl.handle.net/11296/tur9hu"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Django 網際框架在四平台框架合成系統上的應用</span></span></a></li>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">李玠廷, 2010</span></span><a href="https://hdl.handle.net/11296/mtf789"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">網際程序框架在平台的3平台機構尺寸合成系統上應用</span></span></a></li>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">陳威任, 2013, 符號式平面機構應用研究</span></span></li>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">謝政良, 2012,</span></span><a href="https://hdl.handle.net/11296/h5z5sb"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">網際雙自由度機構尺寸合成系統</span></span></a></li>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">黃迎鉉，2012，</span></span><a href="https://hdl.handle.net/11296/a5b4p7"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">網符號輔助軸接連桿機構之基因演算尺寸合成系統</span></span></a></li>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">謝智翔, 2012,</span></span><a href="https://hdl.handle.net/11296/v9mr92"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">網際史都華平台機構逆運動學分析與模擬</span></span></a></li>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">許哲菘, 2010,</span></span><a href="https://hdl.handle.net/11296/w66tpa"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">網際六軸機械臂系統的逆運動學分析與模擬</span></span></a></li>
+<li><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">葉岱錦, 2009,</span></span><a href="https://hdl.handle.net/11296/tt6672"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">基因演算法在網際機構合成系統上的</span></span></a></li>
+</ol>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">過程中，於2011年由</span></span><a href="https://github.com/kmollee"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">李孟恭</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">整合上述論文所開發的算法，完成</span></span><a href="http://cython.org/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Cython</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">格式的</span></span><a href="https://github.com/kmollee/algorithm/blob/master/rga.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">RGA</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">、</span></span><a href="https://github.com/kmollee/algorithm/blob/master/de.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">DE</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">與</span></span><a href="https://github.com/kmollee/algorithm/blob/master/firefly.pyx"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Firefly</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">算法演算法庫後。</span><span style="vertical-align: inherit;">並自2016年起由</span></span><a href="https://github.com/KmolYuan"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">張元</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">將上述這些合成演算法，採用</span></span><a href="http://www.swig.org/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">SWIG</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">技術，將單獨用於Python 2的</span></span><a href="https://github.com/BBBSnowball/python-solvespace"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python-Solvespace，</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">改寫為能結合PyQt5圖形介面使用的</span></span><a href="https://github.com/mdecourse/python-solvespace"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python-Solvespace</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">程序庫愚開端。</span><span style="vertical-align: inherit;">再用平面機構中的組合與類型合成等程序庫後，</span></span><a href="https://github.com/KmolYuan/Pyslvs-PyQt5"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">現有</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">的 </span><a href="https://github.com/KmolYuan/Pyslvs-PyQt5"><span style="vertical-align: inherit;">Pyslvs-UI</span></a><span style="vertical-align: inherit;">平面機構模擬與合成套件。</span></span></p>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Pyslvs-UI 開發紀要</span></span></h4>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2015年4月——由</span></span><a href="https://github.com/kmollee"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">李孟恭</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">以</span></span><a href="http://cython.org/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Cython</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">技術，完成三個</span></span><a href="https://github.com/kmollee/algorithm"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">尺寸合成演算法</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">程序庫。</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2016年7月——由</span></span><a href="https://github.com/KmolYuan"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">張元</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">完成Python 3格式的</span></span><a href="https://github.com/KmolYuan/python-solvespace"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python-Solvespace</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">程序庫。</span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2016年12月-由</span></span><a href="https://github.com/KmolYuan"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">張元</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">結合PyQt5與演算程序庫，完成第一代</span></span><a href="https://github.com/KmolYuan/Pyslvs-PyQt5"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Pyslvs-UI</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">套件。</span></span></p>
+<p><span style="vertical-align: inherit;"></span><a href="https://github.com/KmolYuan/pyslvs-paper-public/releases"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2011</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">年7月9日 - 由張元完成平台</span><a href="https://github.com/KmolYuan/pyslvs-paper-public/releases"><span style="vertical-align: inherit;">多機構之合成與應用</span></a><span style="vertical-align: inherit;">碩士論文。</span></span></p>
+<p></p>
+<br />C-notes << <a href='C-notes.html'>Previous</a> <a href='Git擴展.html'>Next</a> >> Git擴展</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
